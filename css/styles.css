@@ -1,0 +1,108 @@
+:root {
+    --primary: #1f3a5f;
+    --accent: #e76f51;
+    --light: #f4f4f4;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: var(--light);
+    color: #222;
+}
+
+header {
+    background: var(--primary);
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+#menuBtn {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
+}
+
+main {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.card {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.filters {
+    margin-bottom: 1rem;
+}
+
+.filters button {
+    margin-right: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    background: var(--accent);
+    color: white;
+    cursor: pointer;
+}
+
+.course {
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 4px;
+}
+
+.completed {
+    background: #c7f9cc;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: var(--primary);
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        display: none;
+    }
+
+    nav ul.open {
+        display: flex;
+    }
+
+    #menuBtn {
+        display: block;
+    }
+}

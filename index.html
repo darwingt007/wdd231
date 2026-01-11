@@ -1,12 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="WDD 231 – Web Frontend Development course home page">
+    <meta name="author" content="Darwin Torrejon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD231</title>
+    <title>WDD 231 | Course Home</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" defer></script>
 </head>
+
 <body>
-    <h1>WDD231</h1>
-    
+    <header>
+        <h1>WDD 231: Web Frontend Development</h1>
+        <button id="menuBtn" aria-label="Toggle Navigation">☰</button>
+        <nav id="navMenu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Chamber Project</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>Home</h2>
+            <p>
+                Welcome to WDD 231. This course focuses on modern frontend development
+                using HTML, CSS, and JavaScript with responsive design and accessibility.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>Student Photo</h2>
+            <img src="images/profile.jpg" alt="Photo of the student">
+        </section>
+
+        <section class="card">
+            <h2>Web Certificates Courses</h2>
+
+            <div class="filters">
+                <button data-filter="all">All</button>
+                <button data-filter="cse">CSE</button>
+                <button data-filter="wdd">WDD</button>
+                <button data-filter="css">CSS</button>
+            </div>
+
+            <div id="courses"></div>
+
+            <p id="totalCredits"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            © <span id="year"></span> | Darwin Torrejon | Bolivia
+        </p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
+
 </html>
