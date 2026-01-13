@@ -21,7 +21,7 @@ function displayCourses(filter = "all") {
         .filter(course => filter === "all" || course.type === filter)
         .forEach(course => {
             const div = document.createElement("div");
-            div.classList.add("course");
+            div.className = "course";
 
             if (course.completed) {
                 div.classList.add("completed");
@@ -32,16 +32,14 @@ function displayCourses(filter = "all") {
             list.appendChild(div);
         });
 
-    total.textContent =
-        `The total credits for courses listed above is ${creditSum}`;
+    total.textContent = `The total credits for courses listed above is ${creditSum}`;
 }
 
-// Initial display
 displayCourses();
 
-// Filter buttons
 document.querySelectorAll(".course-filters button").forEach(button => {
     button.addEventListener("click", () => {
         displayCourses(button.dataset.filter);
     });
 });
+

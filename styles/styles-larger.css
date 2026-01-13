@@ -1,0 +1,13 @@
+@media (max-width: 768px) {
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .course-list {
+        grid-template-columns: 1fr;
+    }
+
+    .course-filters {
+        flex-direction: column;
+    }
+}
