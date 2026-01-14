@@ -36,6 +36,11 @@ body {
     margin-top: 0.5rem;
 }
 
+.main-nav,
+.main-nav a {
+    color: #ffffff;
+}
+
 .main-nav a {
     color: #ffffff;
     text-decoration: none;
@@ -45,7 +50,7 @@ body {
 }
 
 .main-nav a:hover {
-    background-color: #333;
+    background-color: #444;
 }
 
 /* MAIN */
